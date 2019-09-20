@@ -1,0 +1,67 @@
+*{margin:0;padding:0;}
+a{text-align:none;}
+body{
+	background: grey url(./wall1.jpg) no-repeat center;
+	background-size: cover;/* cover 把背景图像扩展至足够大，以使背景图像完全覆盖背景区域，即背景图片自适应*/
+}
+
+kbd{
+	font-size: 16px;
+	color:white;
+	font-family: helvetica;
+	text-transform: uppercase;/*字母转大写*/
+	position: relative;
+	height: 50px;
+	width: 62px;
+	background: linear-gradient(to bottom,#292929 0%,#111111 100%);/*背景渐变效果，从上往下292929变到111111，由深变浅*/
+	border:1px solid black;
+	border-radius: 7px;/* 7px的圆角，圆心到边的距离是7px*/
+	box-shadow: 0 0 0 1px #1A1B1C,0 0 0 2px #1F2020,0 3px 0 2px #080808;
+	margin:10px 10px;
+	display: inline-block;
+}
+kbd>span{
+	position: absolute;
+	top:2px;
+	left: 4px;
+}
+kbd>button{
+	position: absolute;
+	right: 0;
+	bottom:0;
+	display:none;
+	font-size: 8px;
+	border-radius: 4px;
+	background: transparent;
+	color: white;
+	border: 1px solid white;
+	padding:2px;
+}
+kbd:hover>button{
+	display: inline-block;
+}
+
+#wrapper{
+	display: inline-block;
+	background: rgba(255,255,255,0.5);/*加上半透明背景*/
+	border-radius: 14px;
+	padding:20px;
+}
+
+main{
+	height: 100vh;
+	width:100vw;
+	display: inline-flex;/*flex布局*/
+	align-items: center;/*垂直居中*/
+	justify-content: center;/*水平居中*/ 
+	text-align: center;
+}
+
+kbd>img{
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	left:2px;
+	bottom:0;
+	border-radius: 4px;
+}
